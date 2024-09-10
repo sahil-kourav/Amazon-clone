@@ -1,0 +1,678 @@
+* {
+  margin: 0;
+  font-family: Arial;
+  box-sizing: border-box;
+}
+body {
+  background-color: #b5b5b5f3;
+}
+.navbar {
+  height: 60px;
+  width: 100%;
+  background-color: #0f1111;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+.nav-logo {
+  height: 26px;
+  width: 104px;
+  margin-left: 5px;
+}
+.logo {
+  background-image: url("https://www.pngmart.com/files/23/Amazon-Logo-White-PNG-Image.png");
+  background-size: cover;
+  /* background-position: center; */
+  height: 30px;
+  width: 92%;
+  font-weight: 600;
+  cursor: pointer;
+}
+.border {
+  padding-bottom: 0;
+
+}
+.border:hover {
+  text-decoration: underline;
+}
+
+/* nav address bar */
+.nav-add{
+   margin-left: 10px;
+   padding-top: 2px;
+}
+.add-first {
+  color: #cccccc;
+  font-size: 0.75rem;
+  margin-left: -3px;
+  cursor: pointer;
+}
+
+.add-second {
+  color: #ffffff;
+  font-size: 1rem;
+  margin-left: 5px;
+  cursor: pointer;
+}
+
+.add-icon {
+  display: flex;
+  margin-left: -20px;
+}
+
+/* nav search bar - 3*/
+
+.nav-search {
+  display: flex;
+  height: 40px;
+  width: 700px;
+  border-radius: 4px;
+  background-color: aqua;
+  justify-content: space-evenly;
+  margin-left: 5px;
+}
+
+.search-select {
+  width: 60px;
+  color: #0f1111;
+  background-color: #e9e7e7;
+  border-top-left-radius: 4px;
+  border-bottom-left-radius: 4px;
+  border: none;
+  text-align: center;
+  cursor: pointer;
+}
+
+.search-select:hover {
+  color: black;
+  background-color: lightgrey;
+}
+
+.search-input {
+  width: 100%;
+  font-size: 0.9rem;
+  border: none;
+  outline: none;
+  padding-left: 6px;
+}
+.search-icon {
+  width: 45px;
+  text-align: center;
+  font-size: 1.1rem;
+  background-color: rgb(252, 192, 103);
+  color: black;
+  border-top-right-radius: 4px;
+  border-bottom-right-radius: 4px;
+  align-content: center;
+  cursor: pointer;
+}
+.search-icon:hover {
+  background-color: rgb(237, 171, 72);
+}
+
+.nav-search:hover {
+  border: 1px solid orange;
+}
+
+/* Language box */
+
+.nav-lang {
+  cursor: pointer;
+  margin-top: 6px;
+}
+
+.nav-lang img{
+  height: 37px;
+  width: 37px;
+  margin-top: -15px;
+}
+.nav-lang p{
+  margin-left: 38px;
+  margin-top: -25px;
+  font-size: 0.9rem;
+  font-weight: 550;
+}
+/* Sign in box & Return order */
+
+.dropdown {
+  padding-top: 0px;
+  position: relative;
+  display: inline-block;
+}
+
+.dropbtn {
+  text-align: left;
+  color: white;
+  border: none;
+  background: none;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.dropbtn:hover {
+  text-decoration: underline;
+}
+.dropbtn span {
+  font-size: 0.8rem;
+  color: white;
+}
+.dropbtn p {
+  color: #ffffff;
+  font-size: 0.9rem;
+  font-weight: 700;
+  cursor: pointer;
+}
+.dropdown-content {
+  display: none;
+  position: absolute;
+  right: 0;
+  height: 400px;
+  width: 500px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  background-color: white;
+  border-radius: 3px;
+  z-index: 1;
+  padding: 10px;
+  margin-top: 3px;
+  box-sizing: border-box;
+}
+
+.dropdown-content .dropdown-category {
+  margin-bottom: 15px;
+  margin-top: 5px;
+}
+
+.dropdown-content h4 {
+  margin-top: 0px;
+  padding-bottom: 3px;
+  color: black;
+  font-size: 14px;
+}
+
+.dropdown-content ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.dropdown-content ul li {
+  margin: 5px 0;
+}
+
+.dropdown-content ul li a {
+  text-decoration: none;
+  color: black;
+  font-size: 12px;
+  display: block;
+  padding: 0;
+  margin-top: 8px;
+}
+
+.dropdown-content ul li a:hover {
+  color: red;
+  text-decoration: underline;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.new-user .signIn-btn {
+  color: black;
+  padding: 7px 0px;
+  height: 30px;
+  text-align: center;
+  margin: auto;
+  width: 250px;
+  border-radius: 9px;
+  outline: none;
+  border: none;
+  background-color: rgba(255, 201, 6, 0.914);
+}
+.new-user {
+  text-align: center;
+}
+.new-user ul li span {
+  font-size: 0.8rem;
+  color: black;
+}
+.new-user ul li a {
+  color: blue;
+  font-size: 0.8rem;
+  padding-top: 0px;
+  text-decoration: none;
+  border-bottom: 1px solid rgba(225, 225, 225, 0.783);
+  padding-bottom: 10px;
+}
+.cat-first {
+  float: left;
+  padding-left: 15px;
+  text-align: left;
+}
+
+.cat-second {
+  float: right;
+  padding-right: 45px;
+  text-align: left;
+  padding-left: 20px;
+  border-left: 1px solid rgba(225, 225, 225, 0.783);
+}
+
+.nav-returns {
+  padding-top: 4px;
+  cursor: pointer;
+}
+.nav-returns span {
+  font-size: 0.8rem;
+}
+.nav-returns p {
+  color: #ffffff;
+  font-size: 0.9rem;
+  font-weight: 600;
+}
+
+/* nav cart */
+
+.nav-cart {
+  cursor: pointer;
+  font-size: 0.85rem;
+  font-weight: 600;
+  margin-right:  10px;
+}
+.nav-cart i {
+  font-size: 27px;
+}
+
+/* <--- now we are going to design panel bar ---> */
+
+.panel {
+  height: 40px;
+  background-color: rgba(11, 10, 35, 0.804);
+  color: white;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+.panel-all{
+  margin-left: 20px;
+}
+.panel-all a {
+  color: white;
+  text-decoration: none;
+  font-weight: 500;
+}
+.panel-all i{
+  padding-right: 3px;
+  font-size: 19px;
+}
+.panel-menu {
+  font-size: 0.85rem;
+margin-left: 10px;
+}
+
+.panel-menu a {
+  color: white;
+  text-decoration: none;
+  margin-left: 10px;
+}
+
+.panel-deals a {
+  font-size: 0.9rem;
+  font-weight: 700;
+  color: white;
+  text-decoration: none;
+}
+
+/* Now we are going to design hero section or img sliders*/
+
+.slider {
+  position: relative;
+  width: 540px;
+  width: 100%;
+  overflow: hidden;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.slides {
+  display: flex;
+  transition: transform 0.5s ease-in-out;
+}
+
+.slide {
+  height: 540px;
+  width: 100%;
+  box-sizing: border-box;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.slide img {
+  height: 540px;
+  width: 1449px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  display: block;
+}
+
+.prev,
+.next {
+  position: absolute;
+  top: 40%;
+  transform: translateY(-50%);
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.prev {
+  left: 10px;
+  font-size: 30px;
+}
+
+.next {
+  right: 10px;
+  font-size: 40px;
+}
+
+.prev:hover,
+.next:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+.hero-about {
+  height: 35px;
+  width: 96.8%;
+  margin: auto;
+  position: absolute;
+  bottom: 150px;
+  background-color: white;
+  color: black;
+  font-size: 14px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: -20px;
+  margin-bottom: 20px;
+  margin-left: 20px;
+}
+
+.hero-about a {
+  cursor: pointer;
+  color: #007185;
+}
+.hero-about a:hover {
+  color: red;
+  text-decoration: underline;
+}
+
+/* here we are going to design content bar */
+
+.shop-cards {
+  height: 715px;
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  position: relative;
+  bottom: 170px;
+}
+
+.box {
+  height: 420px;
+  width: 23%;
+  background-color: white;
+  padding: 20px 0 15px;
+  margin-top: 20px;
+}
+/* Single img layout  */
+.card-img {
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 300px;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+.card-content {
+  margin-left: 1.2rem;
+  margin-right: 1.2rem;
+}
+.card-content p {
+  font-size: 13px;
+  color: #007185;
+}
+.card-content p:hover {
+  color: red;
+  cursor: pointer;
+  text-decoration: underline;
+}
+
+/* multiple img layout */
+
+.card-img-2 {
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 100px;
+  width: 130px;
+  margin-top: 1rem;
+}
+.inside-cards {
+  display: inline-block;
+  height: 100px;
+  width: 49%;
+}
+.card-content {
+  margin-left: 1.2rem;
+  margin-right: 1.2rem;
+}
+.card-content span {
+  color: black;
+  font-size: 13px;
+}
+#card-bottom-p {
+  margin-top: 60px;
+}
+
+/* Now we are creating scroll bar */
+.scroll-container {
+  height: 1840px;
+  box-sizing: border-box;
+
+  padding: 20px 0px 15px;
+}
+.box1 {
+  height: 290px;
+  width: 96.6%;
+  margin: auto;
+  background-color: rgba(255, 255, 255, 0.945);
+  margin-bottom: 20px;
+}
+.scroll-content {
+  margin-left: 10px;
+  margin-right: 10px;
+}
+.scroll-heading {
+  color: black;
+  font-weight: 700;
+  display: inline-block;
+  margin-top: 20px;
+  margin-left: 12px;
+}
+.scroll-bar {
+  height: 290px;
+  width: 98%; /* Full width of the container */
+  overflow-x: auto; /* Enables horizontal scrolling */
+  overflow-y: hidden; /* Hides vertical scrollbar */
+  white-space: nowrap; /* Prevents images from wrapping to the next line */
+  padding: 10px; /* Optional: padding inside the container */
+  box-sizing: border-box; /* Includes padding and border in the element’s total width */
+  margin-top: 5px;
+  margin-left: 12px;
+}
+
+/* Hide scrollbar for Webkit browsers (Chrome, Safari) */
+.scroll-bar::-webkit-scrollbar {
+  display: none; /* Hides the scrollbar */
+}
+
+/* Hide scrollbar for Firefox */
+.scroll-bar {
+  scrollbar-width: none; /* Hides the scrollbar */
+}
+
+/* Hide scrollbar for Internet Explorer and Edge */
+.scroll-bar {
+  -ms-overflow-style: none; /* Hides the scrollbar */
+}
+
+/* Ensure images display inline horizontally */
+.scroll-bar img {
+  display: inline-block; /* Places images next to each other horizontally */
+  height: auto; /* Maintains aspect ratio */
+  max-width: 100%; /* Ensures images do not exceed the container width */
+  margin-right: 10px; /* Optional: space between images */
+}
+
+.shop-cards-2 {
+  height: 420px;
+  width: 99.7%;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+/* Shoping box 3 */
+.card-9,
+.card-10,
+.card-11,
+.card-12 {
+  margin-top: 0px;
+}
+
+/* Scroll bar 2 */
+.scroll-container-2 {
+  height: 448px;
+  width: 99.7%;
+  padding-top: 20px;
+  margin: auto;
+}
+
+/* Shoping box 4 */
+.card-13,
+.card-14,
+.card-15,
+.card-16 {
+  margin-top: -117px;
+}
+.shop-cards-3 {
+  display: flex;
+  height: 310px;
+  width: 99.4%;
+  padding-top: -37px;
+  margin: auto;
+  justify-content: space-evenly;
+}
+
+/* We are creating footer */
+footer {
+  margin-top: 0px;
+}
+.footer-panel-1 {
+  height: 50px;
+  background-color: #37475a;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  font-size: 0.85rem;
+}
+.footer-panel-1:hover {
+  background-color: #102f54ce;
+}
+
+.footer-panel-2 {
+  height: 350px;
+  background-color: #222f3d;
+  color: white;
+  display: flex;
+  justify-content: space-evenly;
+  font-size: 0.8rem;
+}
+ul {
+  margin-top: 50px;
+}
+ul p {
+  font-size: 1rem;
+  font-weight: 400;
+}
+ul a {
+  display: block;
+  font-size: 0.85rem;
+  margin-top: 10px;
+  color: #ddddddea;
+  cursor: pointer;
+}
+.footer-panel-2 a:hover {
+  text-decoration: underline;
+}
+.footer-panel-3 {
+  height: 110px;
+  background-color: #222f3d;
+  color: #ddddddea;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-top: 0.3px solid #ddddddea;
+}
+.footer-panel-3 i {
+  margin: 5px;
+}
+.footer-panel-3 p {
+  font-size: 12px;
+  height: 30px;
+  width: 130px;
+  margin: 4px;
+  margin-top: -10px;
+  padding: 3px;
+  border-radius: 2px;
+  cursor: pointer;
+  border: 1px solid #ddddddea;
+}
+
+.footer-logo {
+  background-image: url("https://www.pngmart.com/files/23/Amazon-Logo-White-PNG-Image.png");
+  background-size: cover;
+  background-position: center;
+  height: 30px;
+  width: 82px;
+  margin: 10px;
+  cursor: pointer;
+}
+
+.footer-panel-4 {
+  height: 100px;
+  background-color: #0f1111;
+  color: #ddddddea;
+  font-size: 0.9rem;
+  text-align: center;
+}
+.pages {
+  padding-top: 25px;
+}
+.pages a {
+  margin-left: 30px;
+  cursor: pointer;
+}
+.pages a:hover {
+  border-bottom: 1px solid #ddddddea;
+}
+.copyright {
+  padding-top: 8px;
+}

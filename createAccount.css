@@ -1,0 +1,193 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+.create-acc-nav {
+  height: 65px;
+  width: 99%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.amz-logo {
+  background-image: url("https://logos-world.net/wp-content/uploads/2020/04/Amazon-Logo.png");
+  background-size: cover;
+  background-position: center;
+  height: 45px;
+  width: 105px;
+  cursor: pointer;
+  margin-top: -5px;
+}
+.amz-logo a{
+  text-decoration: none;
+}
+.account-container{
+  height: 595px;
+  width: 350px;
+  margin: auto;
+  border: 1px solid #acceceab;
+  border-radius: 10px;
+  padding-left: 20px;
+  padding-top: 15px;
+}
+.account-container h2{
+  margin-left: -3px;
+  color: #111111;
+  font-size: 28px;
+  font-family: "Lato", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.name p{
+  font-size: 13px;
+  font-weight: 600;
+  margin-top: 20px;
+}
+.name input{
+  width: 93%;
+  padding: 5px 6px;
+  outline: none;
+  border: 1px solid #acceceab;
+  border-radius: 3px;
+  margin-top: 3px;
+}
+.mob-no p{
+  font-size: 13px;
+  font-weight: 600;
+  margin-top: 20px;
+}
+.mob-no input{
+  width: 93%;
+  padding: 5px 6px;
+  outline: none;
+  border-radius: 3px;
+  border: 1px solid #acceceab;
+  border-radius: 3px;
+  margin-top: 3px;
+}
+.psw p{
+  font-size: 13px;
+  font-weight: 600;
+  margin-top: 20px;
+}
+.psw input{
+  width: 93%;
+  padding: 5px 6px;
+  outline: none;
+  border-radius: 3px;
+  border: 1px solid #acceceab;
+  border-radius: 3px;
+  margin-top: 3px;
+}
+.psw span{
+  font-size: 13px;
+  font-weight: 400;
+}
+.re-psw p{ 
+  font-size: 13px;
+  font-weight: 600;
+  margin-top: 20px;
+}
+.re-psw input{
+  width: 93%;
+  padding: 5px 6px;
+  outline: none;
+  border-radius: 3px;
+  border: 1px solid #acceceab;
+  border-radius: 3px;
+  margin-top: 3px;
+}
+.personal-details button{
+  width: 93%;
+  padding: 7px 6px;
+  color: #0f1111;
+  outline: none;
+  cursor: pointer;
+  background-color: #ffd133;
+  border: none;
+  border-radius: 7px;
+  margin-top: 15px;
+}
+.other-details {
+  margin-right: 22px;
+}
+.other-details p {
+  font-size: 12px;
+  margin-top: 30px;
+  border-bottom: 1px solid #acceceab;
+  padding-bottom: 20px;
+}
+.other-details a{
+    color: blue;
+    cursor: pointer;
+    text-decoration: none;
+    border-bottom: 1px solid blue;
+}
+.other-details a:hover {
+  border-bottom: 1px solid rgb(222, 152, 22);
+  color: rgb(222, 152, 22);
+}
+
+.account-last {
+  margin-top: 18px;
+  padding-bottom: 15px;
+}
+.account-last p {
+  font-size: 13px;
+  font-weight: 600;
+}
+.account-last a {
+  font-size: 14px;
+  color: blue;
+  cursor: pointer;
+}
+.account-last a:hover {
+  border-bottom: 1px solid rgb(222, 152, 22);
+  color: rgb(222, 152, 22);
+}
+.already-have{
+  padding-top: 15px;
+  width:93%;
+  border-top: 1px solid #acceceab;
+}
+.already-have p{
+  font-size: 13px;
+}
+.already-have a{
+  text-decoration: none;
+  cursor: pointer;
+  color: blue;
+}
+.already-have a:hover {
+  border-bottom: 1px solid rgb(222, 152, 22);
+  color: rgb(222, 152, 22);
+}
+
+.create-acc-foot {
+  height: 85px;
+  text-align: center;
+  width: 80%;
+  margin: auto;
+  border-top: 1px solid #acceceab;
+  padding-top: 25px;
+  margin-top: 50px;
+}
+.create-acc-foot a {
+    cursor: pointer;
+    font-size: 11px;
+    color: blue;
+    margin: 15px;
+    margin-top: 50px;
+  }
+.create-acc-foot a:hover {
+    border-bottom: 1px solid rgb(222, 152, 22);
+    color: rgb(222, 152, 22);
+  }
+.create-acc-foot  p {
+    font-size: 11px;
+    margin-top: 10px;
+    text-align: center;
+  }

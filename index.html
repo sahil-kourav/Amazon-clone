@@ -1,0 +1,971 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Amazon.com. spend less, smile more.</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="mediaQuery.css" />
+    <link
+      rel="icon"
+      type="image/x-icon"
+      href="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTr1XSwtJLWmkQnv6XVQNv_VnV0Pz82bfk9s8jwitFC02y2idezKxguarSJ3dWaUDKprtg&usqp=CAU"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+      integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <header>
+      <div class="navbar">
+        <div class="nav-logo border">
+          <div class="logo"></div>
+        </div>
+
+        <div class="nav-add border">
+          <p class="add-first">Deliver to</p>
+          <div class="add-icon">
+            <i class="fa-solid fa-location-dot"></i>
+            <p class="add-second">India</p>
+          </div>
+        </div>
+
+        <div class="nav-search">
+          <select class="search-select">
+            <option>All</option>
+          </select>
+          <input type="text" placeholder="Search Amazon" class="search-input" />
+          <div class="search-icon">
+            <i class="fa-solid fa-magnifying-glass"></i>
+          </div>
+        </div>
+        <div class="nav-lang border">
+          <img src="prj_imgs/indian-removebg.png" />
+          <p>EN</p>
+        </div>
+
+        <div class="dropdown border">
+          <button class="dropbtn">
+            <span>Hello, sign in</span>
+            <p>
+              Accounts & Lists
+              <i class="fa-solid fa-caret-down"></i>
+            </p>
+          </button>
+          <div class="dropdown-content">
+            <div class="dropdown-category">
+              <div class="new-user">
+                <ul>
+                  <li>
+                    <a href="signIn.html" class="signIn-btn">Sign in</a>
+                  </li>
+                  <li><span>New customer?</span></li>
+                  <li>
+                    <a href="createAccount.html">Start here.</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="dropdown-category">
+              <div class="cat-second">
+                <h4>Your Account</h4>
+                <ul>
+                  <li><a href="#">Account</a></li>
+                  <li><a href="#">Orders</a></li>
+                  <li><a href="#">Recommendations</a></li>
+                  <li><a href="#">Browsing History</a></li>
+                  <li><a href="#">Watchlist</a></li>
+                  <li><a href="#">Video Purchases & Rentals</a></li>
+                  <li><a href="#">Kindle Unlimited</a></li>
+                  <li><a href="#">Content & Devices</a></li>
+                  <li><a href="#">Subscribe & Save Items</a></li>
+                  <li><a href="#">Memberships & Subscriptions</a></li>
+                  <li><a href="#">Music Library</a></li>
+                </ul>
+              </div>
+            </div>
+            <div class="dropdown-category">
+              <div class="cat-first">
+                <h4>Your Lists</h4>
+                <ul>
+                  <li><a href="#">Create a List</a></li>
+                  <li><a href="#">Find a List or Registry</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="nav-returns border">
+          <span>Returns</span>
+          <p>& Orders</p>
+        </div>
+
+        <div class="nav-cart border">
+          <i class="fa-duotone fa-solid fa-cart-plus"></i> Cart
+        </div>
+      </div>
+    </header>
+
+    <!-- we are design panel bar -->
+
+    <div class="panel">
+      <div class="panel-all">
+        <a class="border" href="#"><i class="fa-solid fa-bars"></i> All</a>
+      </div>
+
+      <div class="panel-menu">
+        <a class="border" href="#">Today's Deals</a>
+        <a class="border" href="#">Customer Service</a>
+        <a class="border" href="#">Registry</a>
+        <a class="border" href="#">Gift Cards</a>
+        <a class="border" href="#">Sell</a>
+      </div>
+
+      <!-- <div class="panel-deals">
+        <a class="border" href="#">Deals in Electronics</a>
+      </div> -->
+    </div>
+
+    <!-- Now we are going to design hero section -->
+
+    <div class="slider">
+      <div class="slides">
+        <div class="slide">
+          <img
+            src="https://m.media-amazon.com/images/I/61zAjw4bqPL._SX3000_.jpg"
+            alt="Image 1"
+          />
+        </div>
+        <div class="slide">
+          <img
+            src="https://m.media-amazon.com/images/I/61lwJy4B8PL._SX3000_.jpg"
+            alt="Image 2"
+          />
+        </div>
+        <div class="slide">
+          <img
+            src="https://m.media-amazon.com/images/I/71Ie3JXGfVL._SX3000_.jpg"
+            alt="Image 3"
+          />
+        </div>
+        <div class="slide">
+          <img
+            src="https://m.media-amazon.com/images/I/81KkrQWEHIL._SX3000_.jpg"
+            alt="Image 4"
+          />
+        </div>
+        <div class="slide">
+          <img
+            src="https://m.media-amazon.com/images/I/61CiqVTRBEL._SX3000_.jpg"
+            alt="Image 5"
+          />
+        </div>
+      </div>
+      <!-- Navigation buttons -->
+      <button class="prev" onclick="moveSlides(-1)">&#10094;</button>
+      <button class="next" onclick="moveSlides(+1)">&#10095;</button>
+
+      <div class="hero-about">
+        <p>
+          You are on amazon.com. You can also shop on Amazon India for millions
+          of products with fast local delivery.
+          <a>Click here to go to amazon.in</a>
+        </p>
+      </div>
+    </div>
+
+    <!-- Here we are going to design content box -->
+    <!-- we can divide boxes of one row in 4 box -->
+    <!-- First box -->
+    <div class="shop-cards">
+      <div class="card-1 box">
+        <div class="card-content">
+          <h3>Deals in PCs</h3>
+          <div
+            class="card-img"
+            style="background-image: url('prj_imgs/card_1.jpg')"
+          ></div>
+          <p>Shop now</p>
+        </div>
+      </div>
+
+      <!-- Second box -->
+      <div class="card-2 box">
+        <div class="card-content">
+          <h3>Shop deals in Fashion</h3>
+          <div class="inside-cards">
+            <div
+              class="card-img-2"
+              style="background-image: url('prj_imgs/jeans.jpg')"
+            ></div>
+            <span>Jeans under $50</span>
+          </div>
+          <div class="inside-cards">
+            <div
+              class="card-img-2"
+              style="background-image: url('prj_imgs/top.jpg')"
+            ></div>
+            <span>Tops under $25</span>
+          </div>
+          <div class="inside-cards">
+            <div
+              class="card-img-2"
+              style="background-image: url('prj_imgs/dresses.jpg')"
+            ></div>
+            <span>Dresses under $30</span>
+          </div>
+          <div class="inside-cards">
+            <div
+              class="card-img-2"
+              style="background-image: url('prj_imgs/shoes.jpg')"
+            ></div>
+            <span>Shoes under $50</span>
+          </div>
+          <p id="card-bottom-p">See more</p>
+        </div>
+      </div>
+
+      <!-- Third box -->
+      <div class="card-3 box">
+        <div class="card-content">
+          <h3>Refresh your space</h3>
+          <div class="inside-cards">
+            <div
+              class="card-img-2"
+              style="background-image: url('prj_imgs/dining.jpg')"
+            ></div>
+            <span>Dining</span>
+          </div>
+          <div class="inside-cards">
+            <div
+              class="card-img-2"
+              style="background-image: url('prj_imgs/home.jpg')"
+            ></div>
+            <span>Home</span>
+          </div>
+          <div class="inside-cards">
+            <div
+              class="card-img-2"
+              style="background-image: url('prj_imgs/kitchen.jpg')"
+            ></div>
+            <span>Kitchen</span>
+          </div>
+          <div class="inside-cards">
+            <div
+              class="card-img-2"
+              style="background-image: url('prj_imgs/health.jpg')"
+            ></div>
+            <span>Health and Beauty</span>
+          </div>
+          <p id="card-bottom-p">See all deals</p>
+        </div>
+      </div>
+
+      <!-- Fourth box -->
+      <div class="card-4 box">
+        <div class="card-content">
+          <h3>Gaming accessories</h3>
+          <div class="inside-cards">
+            <div
+              class="card-img-2"
+              style="background-image: url('prj_imgs/headset.jpg')"
+            ></div>
+            <span>Headsets</span>
+          </div>
+          <div class="inside-cards">
+            <div
+              class="card-img-2"
+              style="background-image: url('prj_imgs/keybord.jpg')"
+            ></div>
+            <span>Keybords</span>
+          </div>
+          <div class="inside-cards">
+            <div
+              class="card-img-2"
+              style="background-image: url('prj_imgs/mouse.jpg')"
+            ></div>
+            <span>Computer mouse</span>
+          </div>
+          <div class="inside-cards">
+            <div
+              class="card-img-2"
+              style="background-image: url('prj_imgs/chairs.jpg')"
+            ></div>
+            <span>Chairs</span>
+          </div>
+          <p id="card-bottom-p">See more</p>
+        </div>
+      </div>
+
+      <!-- Fifth box -->
+      <div class="card-5 box">
+        <div class="card-content">
+          <h3>Amazon Gadget Store</h3>
+          <div class="inside-cards">
+            <div
+              class="card-img-2"
+              style="background-image: url('prj_imgs/smartphones.jpg')"
+            ></div>
+            <span>Smartphones</span>
+          </div>
+          <div class="inside-cards">
+            <div
+              class="card-img-2"
+              style="background-image: url('prj_imgs/tablets.jpg')"
+            ></div>
+            <span>Tablets</span>
+          </div>
+          <div class="inside-cards">
+            <div
+              class="card-img-2"
+              style="background-image: url('prj_imgs/laptops.jpg')"
+            ></div>
+            <span>Laptops</span>
+          </div>
+          <div class="inside-cards">
+            <div
+              class="card-img-2"
+              style="background-image: url('prj_imgs/tvs.jpg')"
+            ></div>
+            <span>TVs</span>
+          </div>
+          <p id="card-bottom-p">See more</p>
+        </div>
+      </div>
+
+      <!-- Sisth Box -->
+      <div class="card-6 box">
+        <div class="card-content">
+          <h3>Toys under $25</h3>
+          <div
+            class="card-img"
+            style="background-image: url('prj_imgs/toys.jpg')"
+          ></div>
+          <p>Shop now</p>
+        </div>
+      </div>
+
+      <!-- Seventh box -->
+      <div class="card-6 box">
+        <div class="card-content">
+          <h3>Fashion trends you like</h3>
+          <div class="inside-cards">
+            <div
+              class="card-img-2"
+              style="background-image: url('prj_imgs/dresses_2.jpg')"
+            ></div>
+            <span>Dresses</span>
+          </div>
+          <div class="inside-cards">
+            <div
+              class="card-img-2"
+              style="background-image: url('prj_imgs/knits.jpg')"
+            ></div>
+            <span>Knits</span>
+          </div>
+          <div class="inside-cards">
+            <div
+              class="card-img-2"
+              style="background-image: url('prj_imgs/jakets.jpg')"
+            ></div>
+            <span>Jakets</span>
+          </div>
+          <div class="inside-cards">
+            <div
+              class="card-img-2"
+              style="background-image: url('prj_imgs/jewelry.jpeg')"
+            ></div>
+            <span>Jewelry</span>
+          </div>
+          <p id="card-bottom-p">See more from Amazon Gadget</p>
+        </div>
+      </div>
+
+      <!-- Eighth box -->
+      <div class="card-8 box">
+        <div class="card-content">
+          <h3>Beauty steals under $25</h3>
+          <div
+            class="card-img"
+            style="background-image: url('prj_imgs/beauty.jpeg')"
+          ></div>
+          <p>Shop now</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Now we are creating scroll bars -->
+    <!-- First scroll bar -->
+    <div class="scroll-container">
+      <div class="scroll-box-1 box1">
+        <div class="scroll-content">
+          <h3 class="scroll-heading">
+            Best Sellers in Cell Phones & Accessories
+          </h3>
+          <div class="scroll-bar">
+            <img
+              src="https://m.media-amazon.com/images/I/71vk1UJniHL._AC_SY200_.jpg"
+              alt="Image 1"
+            />
+            <img
+              src="https://m.media-amazon.com/images/I/71aodrmIgCL._AC_SY200_.jpg"
+              alt="Image 2"
+            />
+            <img
+              src="https://m.media-amazon.com/images/I/61XaXw+DDRL._AC_SY200_.jpg"
+              alt="Image 3"
+            />
+            <img
+              src="https://m.media-amazon.com/images/I/71OicfvCsbL._AC_SY200_.jpg"
+              alt="Image 4"
+            />
+            <img
+              src="https://m.media-amazon.com/images/I/61JkEouNSAL._AC_SY200_.jpg"
+              alt="Image 5"
+            />
+            <img
+              src="https://m.media-amazon.com/images/I/71zY7rMNyjL._AC_SY200_.jpg"
+              alt="Image 6"
+            />
+            <img
+              src="https://m.media-amazon.com/images/I/41iWogJnZQL._AC_SY200_.jpg"
+              alt="Image 7"
+            />
+            <img
+              src="https://m.media-amazon.com/images/I/61sEXWuQPiL._AC_SY200_.jpg"
+              alt="Image 8"
+            />
+            <img
+              src="https://m.media-amazon.com/images/I/71fW+RXbrzL._AC_SY200_.jpg"
+              alt="Image 9"
+            />
+            <img
+              src="https://m.media-amazon.com/images/I/71Dfmp6z2SL._AC_SY200_.jpg"
+              alt="Image 10"
+            />
+            <img
+              src="https://m.media-amazon.com/images/I/61VwfUI+-eL._AC_SY200_.jpg"
+              alt="Image 11"
+            />
+            <img
+              src="https://m.media-amazon.com/images/I/71UI1X5t8uL._AC_SY200_.jpg"
+              alt="Image 12"
+            />
+            <img
+              src="https://m.media-amazon.com/images/I/61hh93h2ZbL._AC_SY200_.jpg"
+              alt="Image 13"
+            />
+            <img
+              src="https://m.media-amazon.com/images/I/51em0o7HtgL._AC_SY200_.jpg"
+              alt="Image 14"
+            />
+          </div>
+        </div>
+      </div>
+
+      <!-- second scroll box -->
+      <div class="scroll-box-2 box1">
+        <div class="scroll-content">
+          <h3 class="scroll-heading">Popular Gifts in Baby</h3>
+          <div class="scroll-bar">
+            <img
+              src="https://m.media-amazon.com/images/I/61t66wWbwSL._AC_SY200_.jpg"
+              alt="Image 1"
+            />
+            <img
+              src="https://m.media-amazon.com/images/I/71VbWD173wL._AC_SY200_.jpg"
+              alt="Image 2"
+            />
+            <img
+              src="https://m.media-amazon.com/images/I/717S1G4-JkL._AC_SY200_.jpg"
+              alt="Image 3"
+            />
+            <img
+              src="https://m.media-amazon.com/images/I/81oxwKXp+6L._AC_SY200_.jpg"
+              alt="Image 4"
+            />
+            <img
+              src="https://m.media-amazon.com/images/I/61KlU-X-0+L._AC_SY200_.jpg"
+              alt="Image 5"
+            />
+            <img
+              src="https://m.media-amazon.com/images/I/819ch6yZJYL._AC_SY200_.jpg"
+              alt="Image 6"
+            />
+            <img
+              src="https://m.media-amazon.com/images/I/71uUrl5py9L._AC_SY200_.jpg"
+              alt="Image 7"
+            />
+            <img
+              src="https://m.media-amazon.com/images/I/81elrEu+PCL._AC_SY200_.jpg"
+              alt="Image 8"
+            />
+
+            <img
+              src="https://m.media-amazon.com/images/I/91cmJZhpc9L._AC_SY200_.jpg"
+              alt="Image 9"
+            />
+            <img
+              src="https://m.media-amazon.com/images/I/51zi6atVrEL._AC_SY200_.jpg"
+              alt="Image 10"
+            />
+            <img
+              src="https://images-na.ssl-images-amazon.com/images/I/811eH5gVPWL._AC_UL165_SR165,165_.jpg"
+              alt="Image 11"
+            />
+            <img
+              src="https://images-na.ssl-images-amazon.com/images/I/81eARbZPCJL._AC_UL165_SR165,165_.jpg"
+              alt="Image 12"
+            />
+
+            <img
+              src="https://m.media-amazon.com/images/I/61tUADCwGxL._AC_SY200_.jpg"
+              alt="Image 13"
+            />
+            <img
+              src="https://images-na.ssl-images-amazon.com/images/I/61NZrUpGStL._AC_UL165_SR165,165_.jpg"
+              alt="Image 14"
+            />
+          </div>
+        </div>
+      </div>
+
+      <!-- 9th box -->
+      <div class="shop-cards-2">
+        <div class="card-9 box">
+          <div class="card-content">
+            <h3>Look your best this season</h3>
+            <div class="inside-cards">
+              <div
+                class="card-img-2"
+                style="
+                  background-image: url('https://images-na.ssl-images-amazon.com/images/G/01/AmazonExports/Events/2024/DskBTFQuadCards/Fuji_BTF_Quad_Cards_1x_For_her._SY116_CB558654384_.jpg');
+                "
+              ></div>
+              <span>For Her</span>
+            </div>
+            <div class="inside-cards">
+              <div
+                class="card-img-2"
+                style="
+                  background-image: url('https://images-na.ssl-images-amazon.com/images/G/01/AmazonExports/Events/2024/DskBTFQuadCards/Fuji_BTF_Quad_Cards_1x_For_him._SY116_CB558654384_.jpg');
+                "
+              ></div>
+              <span>For Him</span>
+            </div>
+            <div class="inside-cards">
+              <div
+                class="card-img-2"
+                style="
+                  background-image: url('https://images-na.ssl-images-amazon.com/images/G/01/AmazonExports/Events/2024/DskBTFQuadCards/Fuji_BTF_Quad_Cards_1x_For_teens._SY116_CB558654384_.jpg');
+                "
+              ></div>
+              <span>For Teens</span>
+            </div>
+            <div class="inside-cards">
+              <div
+                class="card-img-2"
+                style="
+                  background-image: url('https://images-na.ssl-images-amazon.com/images/G/01/AmazonExports/Events/2024/DskBTFQuadCards/Fuji_BTF_Quad_Cards_1x_For_kids._SY116_CB558654384_.jpg');
+                "
+              ></div>
+              <span>For Kids</span>
+            </div>
+            <p id="card-bottom-p">See more</p>
+          </div>
+        </div>
+
+        <!-- 10th box -->
+        <div class="card-10 box">
+          <div class="card-content">
+            <h3>Level up your gaming</h3>
+            <div class="inside-cards">
+              <div
+                class="card-img-2"
+                style="
+                  background-image: url('https://images-na.ssl-images-amazon.com/images/G/01/DiscoTec/2024/CE/GamingWeek24/Homepage/DQC/CE24_SUM_GW_DQC_NW_GamingWeek_PC_v2_1x._SY116_CB558844445_.jpg');
+                "
+              ></div>
+              <span>PC Gaming</span>
+            </div>
+            <div class="inside-cards">
+              <div
+                class="card-img-2"
+                style="
+                  background-image: url('https://images-na.ssl-images-amazon.com/images/G/01/DiscoTec/2024/CE/GamingWeek24/Homepage/DQC/CE24_SUM_GW_DQC_NE_GamingWeek_Xbox_v2_1x._SY116_CB558844445_.jpg');
+                "
+              ></div>
+              <span>Xbox</span>
+            </div>
+            <div class="inside-cards">
+              <div
+                class="card-img-2"
+                style="
+                  background-image: url('https://images-na.ssl-images-amazon.com/images/G/01/DiscoTec/2024/CE/GamingWeek24/Homepage/DQC/CE24_SUM_GW_DQC_SW_GamingWeek_Sony_v2_1x._SY116_CB558844445_.jpg');
+                "
+              ></div>
+              <span>PlayStation</span>
+            </div>
+            <div class="inside-cards">
+              <div
+                class="card-img-2"
+                style="
+                  background-image: url('https://images-na.ssl-images-amazon.com/images/G/01/DiscoTec/2024/CE/GamingWeek24/Homepage/DQC/CE24_SUM_GW_DQC_SE_GamingWeek_Nintendo_v2_1x._SY116_CB558844445_.jpg');
+                "
+              ></div>
+              <span>Nintendo Switch</span>
+            </div>
+            <p id="card-bottom-p">Shop the latest in gaming</p>
+          </div>
+        </div>
+
+        <!-- 11th box -->
+        <div class="card-11 box">
+          <div class="card-content">
+            <h3>Fantastic Finds for Home</h3>
+            <div class="inside-cards">
+              <div
+                class="card-img-2"
+                style="
+                  background-image: url('https://images-na.ssl-images-amazon.com/images/G/01/AmazonExports/Events/2024/DskBTFQuadCards/Fuji_BTF_Quad_Cards_1x_Kitchen._SY116_CB558654384_.jpg');
+                "
+              ></div>
+              <span>Kitchen</span>
+            </div>
+            <div class="inside-cards">
+              <div
+                class="card-img-2"
+                style="
+                  background-image: url('https://images-na.ssl-images-amazon.com/images/G/01/AmazonExports/Events/2024/DskBTFQuadCards/Fuji_BTF_Quad_Cards_1x_Home_decor._SY116_CB558654384_.jpg');
+                "
+              ></div>
+              <span>Home Decor</span>
+            </div>
+            <div class="inside-cards">
+              <div
+                class="card-img-2"
+                style="
+                  background-image: url('https://images-na.ssl-images-amazon.com/images/G/01/AmazonExports/Events/2024/DskBTFQuadCards/Fuji_BTF_Quad_Cards_1x_Dining._SY116_CB558654384_.jpg');
+                "
+              ></div>
+              <span>Dining</span>
+            </div>
+            <div class="inside-cards">
+              <div
+                class="card-img-2"
+                style="
+                  background-image: url('https://images-na.ssl-images-amazon.com/images/G/01/AmazonExports/Events/2024/DskBTFQuadCards/Fuji_BTF_Quad_Cards_1x_Smart_home._SY116_CB558654384_.jpg');
+                "
+              ></div>
+              <span>Smart Home</span>
+            </div>
+            <p id="card-bottom-p">See more</p>
+          </div>
+        </div>
+
+        <!-- 12th box -->
+        <div class="card-12 box">
+          <div class="card-content">
+            <h3>Have more fun with family</h3>
+            <div class="inside-cards">
+              <div
+                class="card-img-2"
+                style="
+                  background-image: url('https://images-na.ssl-images-amazon.com/images/G/01/AmazonExports/Events/2024/DskBTFQuadCards/Fuji_BTF_Quad_Cards_1x_Playground_sets._SY116_CB558654384_.jpg');
+                "
+              ></div>
+              <span>Outdoor Play Sets</span>
+            </div>
+            <div class="inside-cards">
+              <div
+                class="card-img-2"
+                style="
+                  background-image: url('https://images-na.ssl-images-amazon.com/images/G/01/AmazonExports/Events/2024/DskBTFQuadCards/Fuji_BTF_Quad_Cards_1x_STEM_toys_or_learning_toys._SY116_CB558654384_.jpg');
+                "
+              ></div>
+              <span>Learning Toy</span>
+            </div>
+            <div class="inside-cards">
+              <div
+                class="card-img-2"
+                style="
+                  background-image: url('https://images-na.ssl-images-amazon.com/images/G/01/AmazonExports/Events/2024/DskBTFQuadCards/Fuji_BTF_Quad_Cards_1x_Action_figure._SY116_CB558654384_.jpg');
+                "
+              ></div>
+              <span>Action Figures</span>
+            </div>
+            <div class="inside-cards">
+              <div
+                class="card-img-2"
+                style="
+                  background-image: url('https://images-na.ssl-images-amazon.com/images/G/01/AmazonExports/Events/2024/DskBTFQuadCards/Fuji_BTF_Quad_Cards_1x_Pretend_Play_Toys._SY116_CB558654384_.jpg');
+                "
+              ></div>
+              <span>Pretend Play Toys</span>
+            </div>
+            <p id="card-bottom-p">See more</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- 3rd scroll bar -->
+
+      <div class="scroll-container-2">
+        <div class="scroll-box-3 box1">
+          <div class="scroll-content">
+            <h3 class="scroll-heading">
+              New international customers purchased
+            </h3>
+            <div class="scroll-bar">
+              <img
+                src="https://images-na.ssl-images-amazon.com/images/I/717+yh0POUL._AC_UL165_SR165,165_.jpg"
+                alt="Image 1"
+              />
+              <img
+                src="https://m.media-amazon.com/images/I/71F1qORhmvL._AC_SY200_.jpg"
+                alt="Image 2"
+              />
+              <img
+                src="https://m.media-amazon.com/images/I/71bBTEurwoL._AC_SY200_.jpg"
+                alt="Image 3"
+              />
+              <img
+                src="https://images-na.ssl-images-amazon.com/images/I/51xKFo2B+RL._AC_UL165_SR165,165_.jpg"
+                alt="Image 4"
+              />
+              <img
+                src="https://m.media-amazon.com/images/I/71zmhDDh57L._AC_SY200_.jpg"
+                alt="Image 5"
+              />
+              <img
+                src="https://m.media-amazon.com/images/I/61S8FiJCm1L._AC_SY200_.jpg"
+                alt="Image 6"
+              />
+              <img
+                src="https://m.media-amazon.com/images/I/71SPdJ2CF5L._AC_SY200_.jpg"
+                alt="Image 7"
+              />
+              <img
+                src="https://images-na.ssl-images-amazon.com/images/I/81a5X+c7kkL._AC_UL165_SR165,165_.jpg"
+                alt="Image 8"
+              />
+
+              <img
+                src="https://images-na.ssl-images-amazon.com/images/I/81O6JfipQhL._AC_UL165_SR165,165_.jpg"
+                alt="Image 9"
+              />
+              <img
+                src="https://images-na.ssl-images-amazon.com/images/I/611X8GI7hpL._AC_UL165_SR165,165_.jpg"
+                alt="Image 10"
+              />
+              <img
+                src="https://images-na.ssl-images-amazon.com/images/I/71PNGYHykrL._AC_UL165_SR165,165_.jpg"
+                alt="Image 11"
+              />
+              <img
+                src="https://images-na.ssl-images-amazon.com/images/I/91CfL2NwfIL._AC_UL165_SR165,165_.jpg"
+                alt="Image 12"
+              />
+
+              <img
+                src="https://images-na.ssl-images-amazon.com/images/I/71QManc1wDL._AC_UL165_SR165,165_.jpg"
+                alt="Image 13"
+              />
+              <img
+                src="https://images-na.ssl-images-amazon.com/images/I/81jj+SCfaPL._AC_UL165_SR165,165_.jpg"
+                alt="Image 14"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- 13th box -->
+      <div class="shop-cards-3">
+        <div class="card-13 box">
+          <div class="card-content">
+            <h3>Smartwatches</h3>
+            <div
+              class="card-img"
+              style="
+                background-image: url('https://images-na.ssl-images-amazon.com/images/G/01/AmazonExports/Fuji/2021/September/DashboardCards/Fuji_Dash_SmartWatch_1X._SY304_CB639922137_.jpg');
+              "
+            ></div>
+            <p>Shop now</p>
+          </div>
+        </div>
+
+        <!-- 14th box -->
+        <div class="card-14 box">
+          <div class="card-content">
+            <h3>Gaming merchandise</h3>
+            <div class="inside-cards">
+              <div
+                class="card-img-2"
+                style="
+                  background-image: url('https://images-na.ssl-images-amazon.com/images/G/01/AmazonExports/Fuji/2021/June/Fuji_Quad_Apparel_1x._SY116_CB667159060_.jpg');
+                "
+              ></div>
+              <span>Apparel</span>
+            </div>
+            <div class="inside-cards">
+              <div
+                class="card-img-2"
+                style="
+                  background-image: url('https://images-na.ssl-images-amazon.com/images/G/01/AmazonExports/Fuji/2021/June/Fuji_Quad_Hat_1x._SY116_CB667159060_.jpg');
+                "
+              ></div>
+              <span>Hats</span>
+            </div>
+            <div class="inside-cards">
+              <div
+                class="card-img-2"
+                style="
+                  background-image: url('https://images-na.ssl-images-amazon.com/images/G/01/AmazonExports/Fuji/2021/June/Fuji_Quad_Figure_1x._SY116_CB667159060_.jpg');
+                "
+              ></div>
+              <span>Action Figures</span>
+            </div>
+            <div class="inside-cards">
+              <div
+                class="card-img-2"
+                style="
+                  background-image: url('https://images-na.ssl-images-amazon.com/images/G/01/AmazonExports/Fuji/2021/June/Fuji_Quad_Mug_1x._SY116_CB667159063_.jpg');
+                "
+              ></div>
+              <span>Mugs</span>
+            </div>
+            <p id="card-bottom-p">See more</p>
+          </div>
+        </div>
+
+        <!-- 15th box -->
+        <div class="card-15 box">
+          <div class="card-content">
+            <h3>Warm & welcoming decor</h3>
+            <div class="inside-cards">
+              <div
+                class="card-img-2"
+                style="
+                  background-image: url('https://images-na.ssl-images-amazon.com/images/G/01/img22/Events/Fall23/FALL23_Oct_Wreaths_Decor_QuadCard_D_01_186x116._SY116_CB596234042_.jpg');
+                "
+              ></div>
+              <span>Wreaths & garlands</span>
+            </div>
+            <div class="inside-cards">
+              <div
+                class="card-img-2"
+                style="
+                  background-image: url('https://images-na.ssl-images-amazon.com/images/G/01/img22/Events/Fall23/FALL23_HP_Oct_Decor_QuadCard_D_03_186x116._SY116_CB596234042_.jpg');
+                "
+              ></div>
+              <span>Outdoor Decor</span>
+            </div>
+            <div class="inside-cards">
+              <div
+                class="card-img-2"
+                style="
+                  background-image: url('https://images-na.ssl-images-amazon.com/images/G/01/img22/Events/Fall23/FALL23_Oct_Pillows_Decor_QuadCard_D_02_186x116._SY116_CB596234042_.jpg');
+                "
+              ></div>
+              <span>Pillows & throws</span>
+            </div>
+            <div class="inside-cards">
+              <div
+                class="card-img-2"
+                style="
+                  background-image: url('https://images-na.ssl-images-amazon.com/images/G/01/img22/Events/Fall23/FALL23_HP_Oct_Decor_QuadCard_D_04_186x116._SY116_CB596234042_.jpg');
+                "
+              ></div>
+              <span>Wall art and mirrors</span>
+            </div>
+            <p id="card-bottom-p">Shop more fall finds</p>
+          </div>
+        </div>
+
+        <!-- 16th box -->
+        <div class="card-16 box">
+          <div class="card-content">
+            <h3>Laptops for every need</h3>
+            <div
+              class="card-img"
+              style="
+                background-image: url('https://images-na.ssl-images-amazon.com/images/G/01/us-manual-merchandising/XCM_CUTTLE_1622894_3373440_379x304_1X_en_size1_US._SY304_CB597469214_.jpg');
+              "
+            ></div>
+            <p>Find your laptop here</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Now we are creating a footer -->
+    <footer>
+      <div class="footer-panel-1">Back to top</div>
+
+      <div class="footer-panel-2">
+        <ul>
+          <p>Get to Get to Know Us</p>
+          <a>Careers</a>
+          <a>Blog</a>
+          <a>About Amazon</a>
+          <a>Investor Relations</a>
+          <a>Amazon Devices</a>
+          <a>Amazon Science</a>
+        </ul>
+        <ul>
+          <p>Make Money with Us</p>
+          <a>Sell products on Amazon</a>
+          <a>Sell on Amazon Business</a>
+          <a>Sell apps on Amazon</a>
+          <a>Become an Affiliate</a>
+          <a>Advertise Your Products</a>
+          <a>Self-Publish with Us</a>
+          <a>Host an Amazon Hub</a>
+          <a>See More Make Money with Us</a>
+        </ul>
+        <ul>
+          <p>Amazon Payment Products</p>
+          <a>Amazon Business Card</a>
+          <a>Shop with Points</a>
+          <a>Reload Your Balance</a>
+          <a>Amazon Currency Converter</a>
+        </ul>
+        <ul>
+          <p>Let Us Help You</p>
+          <a>Amazon and COVID-19</a>
+          <a>Your Account</a>
+          <a>Your Orders</a>
+          <a>Shipping Rates & Policies</a>
+          <a>Returns & Replacements</a>
+          <a>Manage Your Content and Devices</a>
+          <a>Help</a>
+        </ul>
+      </div>
+
+      <div class="footer-panel-3">
+        <a href="index.html" class="footer-logo"></a>
+        <p><i class="fa-solid fa-globe"></i>English</p>
+        <p><i class="fa-solid fa-comment-dollar"></i>USD - U.S. Dollar</p>
+        <p><i class="fa-solid fa-flag-usa"></i>India</p>
+      </div>
+
+      <div class="footer-panel-4">
+        <div class="pages">
+          <a>Conditions of Use</a>
+          <a>Privacy Notice</a>
+          <a>Consumer Health Data Privacy Disclosure</a>
+          <a>Your Ads Privacy Choices</a>
+        </div>
+        <div class="copyright">
+          © 1996-2024, Amazon.com, Inc. or its affiliates
+        </div>
+      </div>
+    </footer>
+    <script src="script.js"></script>
+  </body>
+</html>

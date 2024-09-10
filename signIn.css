@@ -1,0 +1,196 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+.signIn-nav {
+  height: 65px;
+  width: 99%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.amz-logo {
+  background-image: url("https://logos-world.net/wp-content/uploads/2020/04/Amazon-Logo.png");
+  background-size: cover;
+  background-position: center;
+  height: 45px;
+  width: 105px;
+  cursor: pointer;
+  margin-top: -5x;
+}
+.amz-logo a {
+  text-decoration: none;
+}
+.signIn-container {
+  height: 380px;
+  width: 345px;
+  margin: auto;
+  border: 1px solid #acceceab;
+  border-radius: 10px;
+  padding: 8px;
+  margin-top: 10px;
+}
+.signIn-primary {
+  margin-left: 8px;
+}
+.signIn-primary h2 {
+  color: #111111;
+  font-size: 28px;
+  font-family: "Lato", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  margin-left: 8px;
+  margin-top: 7px;
+}
+.signIn-primary p {
+  font-size: 14px;
+  font-weight: 600;
+  margin-top: 20px;
+  margin-left: 10px;
+}
+
+.signIn-primary input {
+  height: 28px;
+  width: 90%;
+  margin-top: 4px;
+  margin-left: 10px;
+  font-size: 13px;
+  outline: none;
+  border-radius: 3px;
+  padding-left: 6px;
+  border: 1px solid #acceceab;
+}
+
+.signIn-primary button {
+  display: block;
+  height: 30px;
+  width: 90%;
+  padding: 1px 6px;
+  margin-left: 10px;
+  color: #0f1111;
+  outline: none;
+  background-color: #ffd133;
+  border: none;
+  border-radius: 7px;
+  margin-top: 15px;
+  cursor: pointer;
+}
+.signIn-secondary {
+  margin-left: 18px;
+  margin-right: 20px;
+}
+.signIn-secondary p {
+  font-size: 12px;
+  margin-top: 13px;
+}
+.signIn-secondary a {
+  color: blue;
+  text-decoration: none;
+  border-bottom: 1px solid blue;
+}
+.signIn-secondary a:hover {
+  border-bottom: 1px solid rgb(222, 152, 22);
+  color: rgb(222, 152, 22);
+}
+.need-help {
+  padding-bottom: 25px;
+}
+.need-help i {
+  font-size: 12px;
+  margin-top: 40px;
+}
+.need-help p {
+  font-family: Arial, Helvetica, sans-serif;
+  display: inline-block;
+  color: blue;
+  font-size: 13px;
+}
+.need-help p:hover {
+  border-bottom: 1px solid rgb(222, 152, 22);
+  color: rgb(222, 152, 22);
+}
+.signIn-second {
+  margin-left: 18px;
+  margin-top: 16px;
+}
+.signIn-second p {
+  font-size: 13px;
+  font-weight: 600;
+}
+.signIn-second a {
+  font-size: 14px;
+  color: blue;
+}
+.signIn-second a:hover {
+  border-bottom: 1px solid rgb(222, 152, 22);
+  color: rgb(222, 152, 22);
+}
+.outer-part {
+  height: 95px;
+  margin-top: 20px;
+  text-align: center;
+}
+.outer-part p {
+  text-align: center;
+  font-size: 12px;
+  width: 100px;
+  margin: auto;
+}
+.outer-part-a {
+  padding-top: 15px;
+}
+.outer-part a {
+  text-decoration: none;
+  font-size: 13px;
+  font-weight: 400;
+  padding: 5px 84px;
+  border: none;
+  border-radius: 8px;
+  text-align: center;
+  background-color: transparent;
+  border: 1px solid #acceceab;
+  color: #0f1111;
+}
+.outer-part a:hover {
+  background-color: rgba(221, 238, 255, 0.268);
+}
+.signIn-foot {
+  height: 85px;
+  text-align: center;
+  width: 80%;
+  margin: auto;
+  border-top: 1px solid #acceceab;
+  padding-top: 18px;
+}
+.signIn-foot a {
+  cursor: pointer;
+  font-size: 11px;
+  color: blue;
+  margin: 15px;
+  margin-top: 50px;
+}
+.signIn-foot a:hover {
+  border-bottom: 1px solid rgb(222, 152, 22);
+  color: rgb(222, 152, 22);
+}
+.signIn-foot p {
+  font-size: 11px;
+  margin-top: 10px;
+  text-align: center;
+}
+fieldset {
+  border-bottom: none;
+  border-top: 0.5px solid #acceceab;
+  border-left: none;
+  border-right: none;
+  width: 25%;
+  margin: 0px auto;
+}
+legend {
+  align-content: center;
+  font-size: 13px;
+  width: 107px;
+  /* padding-left: 10%;  */
+}
